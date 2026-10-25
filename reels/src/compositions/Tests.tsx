@@ -19,11 +19,14 @@ import ejemplo from "../../captions/ejemplo.whisper.json";
 const { width, height, fps } = formats.reel;
 const base = { width, height, fps } as const;
 
-/** Envuelve un componente en el lienzo de marca con la zona segura visible. */
+/**
+ * Envuelve un componente en el lienzo de marca. La zona insegura se ve por defecto
+ * (para revisar); `--props='{"showSafeZone":false}'` la oculta al exportar.
+ */
 function test<P extends object>(Comp: React.FC<P>) {
-  const Wrapped: React.FC<P> = (props) => (
-    <Canvas showSafeZone>
-      <Comp {...props} />
+  const Wrapped: React.FC<P & { showSafeZone?: boolean }> = ({ showSafeZone = true, ...props }) => (
+    <Canvas showSafeZone={showSafeZone}>
+      <Comp {...(props as P)} />
     </Canvas>
   );
   return Wrapped;
