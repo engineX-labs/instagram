@@ -14,7 +14,8 @@
     "render:carousel": "tsx carousels/render.ts",
     "studio": "pnpm sync:reels && remotion studio",
     "typecheck": "tsc --noEmit",
-    "stills": "pnpm sync:reels && tsx scripts/stills.ts"
+    "stills": "pnpm sync:reels && tsx scripts/stills.ts",
+    "render:reel": "pnpm sync:reels && tsx reels/render.ts"
   },
   "devDependencies": {
     "@fontsource/space-grotesk": "5.3.0",
