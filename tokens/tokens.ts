@@ -47,6 +47,20 @@ export const colors = {
 
 export type ColorToken = keyof typeof colors;
 
+/**
+ * Resaltado de sintaxis para CodeTyping, solo con colores de marca:
+ * naranja para palabras clave, blanco para identificadores, grises para lo secundario.
+ */
+export const syntax = {
+  plain: colors.text,
+  keyword: colors.accent,
+  string: colors.accentSoft,
+  number: colors.accentSoft,
+  function: colors.text,
+  comment: colors.textMuted,
+  punctuation: colors.textSecondary,
+} as const;
+
 /** Pares texto/fondo que se usan en piezas reales, con el mínimo WCAG exigido. */
 export const contrastPairs: ReadonlyArray<{
   fg: ColorToken;
@@ -62,6 +76,7 @@ export const contrastPairs: ReadonlyArray<{
   { fg: "accent", bg: "bg", min: 4.5 },
   { fg: "accent", bg: "surface", min: 4.5 },
   { fg: "onAccent", bg: "accent", min: 4.5 },
+  { fg: "accentSoft", bg: "surface", min: 4.5 }, // strings/números en CodeTyping
 ];
 
 /* ------------------------------------------------------------------ */
@@ -225,6 +240,7 @@ export const brandCopy = {
 export const tokens = {
   brand,
   colors,
+  syntax,
   fontFamily,
   fontWeights,
   fontSize,
