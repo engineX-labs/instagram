@@ -1,0 +1,11 @@
+{
+  "slug": "antes-despues-facturar",
+  "name": "POST C — Antes y después de facturar",
+  "slides": [
+    { "type": "cover", "kicker": "Antes y después", "title": "Facturar no debería *llevarte horas.*" },
+    { "type": "before-after", "state": "before", "title": "Cargar cada venta a mano en ARCA.", "points": ["Errores de tipeo.", "Tiempo perdido."] },
+    { "type": "before-after", "state": "after", "title": "La venta genera la factura *automáticamente.*" },
+    { "type": "points", "title": "Qué cambia para vos:", "points": ["Menos errores.", "Menos tiempo.", "Más control."] },
+    { "type": "cta", "title": "¿Querés dejar de facturar *a mano?*", "action": "Escribinos por mensaje directo" }
+  ]
+}

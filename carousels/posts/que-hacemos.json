@@ -1,0 +1,12 @@
+{
+  "slug": "que-hacemos",
+  "name": "POST A — Qué hacemos",
+  "slides": [
+    { "type": "cover", "kicker": "Qué hacemos", "title": "Si se puede pensar, lo *construimos.*" },
+    { "type": "content", "icon": "stock", "title": "Control de stock que se actualiza *solo.*" },
+    { "type": "content", "icon": "invoice", "title": "Facturación con ARCA *sin cargar nada a mano.*" },
+    { "type": "content", "icon": "qr", "title": "Cartas digitales con QR y *pago desde la mesa.*" },
+    { "type": "content", "icon": "calendar", "title": "Reservas para alojamientos, *sin planillas.*" },
+    { "type": "cta", "title": "¿Tu idea no está en la lista? *Mejor.*", "action": "Escribinos por mensaje directo" }
+  ]
+}

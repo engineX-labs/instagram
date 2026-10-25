@@ -1,0 +1,27 @@
+{
+  "_nota": "EJEMPLO escrito a mano para probar el componente Captions. No es una transcripción real.",
+  "text": " Si se puede pensar, lo construimos. Escribinos por mensaje directo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0, "start": 0.2, "end": 2.4, "text": " Si se puede pensar, lo construimos.",
+      "words": [
+        { "word": " Si", "start": 0.2, "end": 0.4 },
+        { "word": " se", "start": 0.4, "end": 0.55 },
+        { "word": " puede", "start": 0.55, "end": 0.85 },
+        { "word": " pensar,", "start": 0.85, "end": 1.4 },
+        { "word": " lo", "start": 1.6, "end": 1.75 },
+        { "word": " construimos.", "start": 1.75, "end": 2.4 }
+      ]
+    },
+    {
+      "id": 1, "start": 2.8, "end": 4.4, "text": " Escribinos por mensaje directo.",
+      "words": [
+        { "word": " Escribinos", "start": 2.8, "end": 3.35 },
+        { "word": " por", "start": 3.35, "end": 3.5 },
+        { "word": " mensaje", "start": 3.5, "end": 3.9 },
+        { "word": " directo.", "start": 3.9, "end": 4.4 }
+      ]
+    }
+  ]
+}
