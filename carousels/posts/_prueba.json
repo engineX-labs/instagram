@@ -1,0 +1,8 @@
+{
+  "slug": "_prueba",
+  "name": "Slide de prueba (Fase 1) — se borra al aprobar la estética",
+  "slides": [
+    { "type": "cover", "title": "Si se puede pensar, lo *construimos.*" },
+    { "type": "cover", "kicker": "Prueba de glifos", "title": "¿Tenés una idea? ¡Escribinos! “Así” es ñandú." }
+  ]
+}
