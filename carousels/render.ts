@@ -18,19 +18,9 @@ import { formats } from "../tokens/tokens.ts";
 import { typographyIssues } from "./lib/text.ts";
 import type { Post, Slide, SlideContext } from "./lib/types.ts";
 import { layout } from "./templates/layout.ts";
-import { cover } from "./templates/cover.ts";
+import { renderSlide, slideVariant } from "./templates/index.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-
-/** Plantilla por tipo de slide. */
-function renderBody(slide: Slide, _ctx: SlideContext): { body: string; css: string } {
-  switch (slide.type) {
-    case "cover":
-      return cover(slide);
-    default:
-      throw new Error(`Plantilla "${slide.type}" todavía no implementada`);
-  }
-}
 
 /** Todo el texto visible de una slide (para el control tipográfico). */
 function visibleText(slide: Slide): string[] {
@@ -76,8 +66,8 @@ async function main() {
   const total = post.slides.length;
   for (const [i, slide] of post.slides.entries()) {
     const ctx: SlideContext = { index: i + 1, total, isLast: i === total - 1 };
-    const { body, css } = renderBody(slide, ctx);
-    const html = layout({ ctx, variant: slide.type, body, css, styles });
+    const { body, css } = renderSlide(slide);
+    const html = layout({ ctx, variant: slideVariant(slide), body, css, styles });
     const name = String(ctx.index).padStart(2, "0");
     const htmlPath = join(htmlDir, `${name}.html`);
     writeFileSync(htmlPath, html);

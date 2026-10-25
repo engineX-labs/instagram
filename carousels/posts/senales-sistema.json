@@ -1,0 +1,13 @@
+{
+  "slug": "senales-sistema",
+  "name": "POST B — 5 señales de que tu negocio necesita un sistema",
+  "slides": [
+    { "type": "cover", "kicker": "5 señales", "title": "Tu negocio *necesita un sistema* si…" },
+    { "type": "list-item", "number": 1, "title": "El cierre de caja es una planilla y una *calculadora.*" },
+    { "type": "list-item", "number": 2, "title": "Te enterás de que se terminó un producto *cuando un cliente lo pide.*" },
+    { "type": "list-item", "number": 3, "title": "Facturás a mano o *copiando datos* de un lugar a otro." },
+    { "type": "list-item", "number": 4, "title": "Solo vos sabés cómo funciona todo: *si faltás, se frena.*" },
+    { "type": "list-item", "number": 5, "title": "Tu información está repartida entre *Excel, WhatsApp y un cuaderno.*" },
+    { "type": "cta", "title": "¿Te sonó alguna? *Hablemos.*", "body": "Contanos cómo trabajás hoy.", "action": "Escribinos por mensaje directo" }
+  ]
+}
